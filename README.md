@@ -19,6 +19,10 @@ You can find them in the example.
 
 ## Update History
 
+### v0.6.3
+- Fix by winseyli (https://github.com/winseyli/react-native-modal-dropdown) to use FlatList instead of deprecated ListView
+- Fix by mtorpvret to get back original argument order (after winselyi's fix)
+
 ### v0.6.2
 - Fix [#139](https://github.com/sohobloo/react-native-modal-dropdown/issues/139) `renderButtonText` renders \[object Object] if there is a call to `setState` in `onSelect` or `renderButtonText` functions
 
