@@ -383,7 +383,7 @@ export default class ModalDropdown extends Component {
 
   _onRowPress(item, index) {
     const {onSelect, renderButtonText, onDropdownWillHide, keepShowAfterOnSelect} = this.props;
-    if (!onSelect || onSelect(index, item) !== false) {
+    if (!onSelect || onSelect(item, index) !== false) {
       const value = renderButtonText && renderButtonText(item) || item.toString();
       this._nextValue = value;
       this._nextIndex = index;
